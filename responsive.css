@@ -1,0 +1,37 @@
+@media (max-width:760px) {
+    header ul {
+        display: none;
+    }
+}
+.responsive_menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.responsive_menu::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    transform: translateY(-5px);
+    height: 5px;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: 0.5s;
+        
+}
+.responsive_menu::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    transform: translateY(-5px);
+    height: 5px;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: 0.5s;
+        
+}

@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+	padding: 20px 8%;
+}
+
+section {
+    padding: 50px 8%;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: sticky;
+	top: 0; left: 0; right: 0;
+    z-index: 1000 !important;
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+
+
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.logo-div {
+	width: 30%;
+}
+
+.logo span {
+	color: #00b6b5;
+}
+
+ul {
+     display: flex;
+	 justify-content: center;
+     width: 40%;
+     list-style: none;
+}
+
+ul li {
+	padding: 10px 25px;
+}
+
+ul li a {
+	text-decoration:none;
+	color: #999;
+	transition: 0.5s;
+	font-size: 14px;
+}
+
+ul li a:hover {
+	background-color: #00b6b5;
+	padding: 15px;
+	color: #000;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+.btn-header {
+	width: 30%;
+	display: flex;
+	justify-content: end;
+}
+
+.btn {
+	color: #000;
+	background-color: #00b6b5;
+	border: 2px solid #00b6b5;
+	padding: 15px 30px;
+	border-radius: 20px;
+	font-weight:bold;
+	cursor: pointer;
+	box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background-color: #f1f1f1;
+	transform: rotate(5deg);
+}
+
+.btn i {
+	margin-right: 5px;
+}
+
+
+.destinations .small-desc {
+    color: #999;
+	width: 60%;
+	font-size: 14px;
+	padding: 20px;
+
+}
+
+.destinations .gallerie .image {
+
+	width: 30%;
+	height: 350px;
+	border-radius: 1rem;
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	background-color: #fff;
+	padding: 20px;
+
+}
+
+.destinations .gallerie .image img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 1rem;
+	transition: 0.5s;
+
+}
+
+.destinations .gallerie {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.destinations .gallerie .description {
+    transform: translateY(350px);
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.destinations .gallerie .description h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	
+}
+
+.destinations .gallerie .description p {
+	font-size: 14px;
+	color: #999;
+}
+
+.destinations .gallerie .image:hover .description {
+	transform: translateY(-120px);
+}
+
+.destinations .gallerie .image:hover img {
+	transform: translateY(-120px);
+}
+
+.destinations .image:hover a {
+    text-decoration:none;
+}
+
+
+
+
+footer {
+	background-color: #f1f1f1;
+	padding: 20px 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer .right-footer {
+	color: #999;
+	font-size: 12px;
+}
+
+footer .right-footer span {
+	color: #00b6b5;
+
+}
+
+
+@media (max-width:800px) {
+	.destinations .gallerie {
+	
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.destinations .gallerie .image {
+
+		width: 100%;
+		height:100%;
+		border-radius: 1rem;
+		
+	}
+	.gallerie .image {
+
+		display: grid;
+		place-items: center;
+		padding-top: 1rem;
+        padding-bottom: 1rem;
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+        position: center;  
+	}
+	
+}

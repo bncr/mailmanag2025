@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courrier Départ</title>
+    <link rel="stylesheet" href="style1.css">
+	<style>
+		body {
+			background-image: url('image/receivemail.jpg');
+	    }
+
+	</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enregistrer le courrier Départ</h2>
+        <form id="registerForm" action="register.php" method="POST">
+            <input type="number" name="numero" placeholder="Numero" required>
+            <input type="date" name="date_envoi" required>
+            <input type="text" name="nom" placeholder="Déstinataire" required>
+            <input type="text" name="prenom" placeholder="A l'intention de " required>
+            <input type="text" name="copie" placeholder="Copie a..." required>
+            <textarea name="textear" rows="7" placeholder="L'objet ici..." required></textarea>
+<br>
+            <label>Courrier en PDF:</label>
+            <input type="file" name="crd_pdf" accept=\"application/pdf\" required>
+
+            <button type="submit" name="save">Enregistrer</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

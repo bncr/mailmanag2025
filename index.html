@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page Login</title>
+  <link rel="stylesheet" href="stylelogin.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2> <span>Welcome to Mail Management</span></h2>
+      <p>Admin Login</p>
+
+      <form action="page1.html" method="post">
+        <label for="username">Username<span>*</span></label>
+        <input type="text" id="username" value="" required />
+
+        <label for="password">Password<span>*</span><a href="#">Forgot Password?</a></label>
+        <input type="password" id="password" value="" required />
+
+        <div class="captcha-box">
+          <input type="checkbox" id="captcha" checked />
+          <label for="captcha">I'm not a robot</label>
+          <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha logo"/>
+          <div class="recaptcha-links">
+            <a href="#">reCAPTCHA</a>
+            <span> - </span>
+            <a href="#">Privacy</a>
+            <span>�</span>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+
+        <button type="submit">LOGIN</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html> 
