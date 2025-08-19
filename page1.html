@@ -13,14 +13,14 @@
 	<header>
 	  <div class="logo-div">
 	  	<div class="logo">
-	  	   <p>ANG <span>.</span>  </p>
+	  	   <p> <span>ANG.</span>  </p>
         </div>
 	  </div>	
 	  <ul>
 	  	<li> <a href="index.html">Home</a></li>
 	  	<li> <a href="#depart">Départ</a></li>
 	  	<li> <a href="#arrivée">Arrivée</a></li>
-	  	<li> <a href="#contact">Contact</a></li>
+	  	<li> <a href="#contact">Recherche</a></li>
 
 	  </ul>
 
@@ -37,6 +37,7 @@
 
 <section class="destinations" id="depart">
 	<h1 class="title">Save your mails</h1>
+	Welcome <?php echo $_POST["user_name"]; ?><br>
 	
 	<p class="small-desc">Enregistrer votre courrier......</p>
    
@@ -59,8 +60,8 @@
 	        </div></a>
 	    </div>
         <div class="image">
-			<a href="page3.html">
-		    <img src="image/Algerie.jpg" alt="">
+			<a href="recherche.php">
+		    <img src="image/recherche.png" alt="">
 		    <div class="description">
 			    <h1>Rechercher</h1>
 			    <p> Rechercher des courriers </p>
