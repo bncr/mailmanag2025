@@ -16,23 +16,21 @@
 <body>
     <div class="form-container">
         <h2>Enregistrer le courrier Arrivée</h2>
-        <form id="registerForm" action="register.php" method="POST">
-            <input type="number" name="numero" placeholder="Numero" required>
-            <input type="date" name="date_envoi" required>
-            <input type="text" name="nom" placeholder="Déstinataire" required>
-            <input type="text" name="prenom" placeholder="A l'intention de " required>
-            <input type="text" name="copie" placeholder="Copie a..." required>
-            <textarea name="textear" rows="7" placeholder="L'objet ici..." required></textarea>
-<br>
+        <form id="registerForm" action="traitform2.php" method="POST" enctype="multipart/form-data">
+            <input type="number" name="num_receiv" placeholder="Numero" required>
+            <input type="date" name="date_receiv" required>
+            <input type="text" name="expediteur" placeholder="Expéditeur" required>
+            <textarea name="objet_receiv" rows="7" placeholder="L'objet ..." required></textarea>
+			<br>
             <label>Courrier en PDF:</label>
-            <input type="file" name="crd_pdf" accept=\"application/pdf\" required>
+            <input type="file" name="cra_pdf" accept=\"application/pdf\" required>
 
-            <button type="submit" name="save">Enregistrer</button>
+            <button type="submit" >Enregistrer</button>
         </form>
     </div>
 
+ 
     <script src="script.js"></script>
     
 </body>
 </html>
-
